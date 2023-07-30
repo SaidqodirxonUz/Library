@@ -1,0 +1,41 @@
+### POST TODO
+POST http://localhost:3000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOTMxYmRkODVhNDJmNzAzN2U3MGMwIn0sImlhdCI6MTY4OTg1ODUxMX0.L_0knm5jcfLE9Hz23kK7A89x24KK7aQdkWEP0UUTw4M
+Content-Type: application/json
+
+{
+  "title": "Imronni tuqqizinchi todosi",
+  "description": "Imron",
+  "list": "64b9320bd85a42f7037e70c6"
+}
+
+
+### GET TODOS
+GET http://localhost:3000/todos?q=imron
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOTMxYmRkODVhNDJmNzAzN2U3MGMwIn0sImlhdCI6MTY4OTg1ODUxMX0.L_0knm5jcfLE9Hz23kK7A89x24KK7aQdkWEP0UUTw4M
+
+
+### GET TODO
+GET http://localhost:3000/todos/64b93afbc73c8b2aa44d3346
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOTMxYmRkODVhNDJmNzAzN2U3MGMwIn0sImlhdCI6MTY4OTg1ODUxMX0.L_0knm5jcfLE9Hz23kK7A89x24KK7aQdkWEP0UUTw4M
+
+
+
+### EDIT TODO
+PATCH http://localhost:3000/todos/64b93a789bba4d1c0803434c
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOTMxYmRkODVhNDJmNzAzN2U3MGMwIn0sImlhdCI6MTY4OTg1ODUxMX0.L_0knm5jcfLE9Hz23kK7A89x24KK7aQdkWEP0UUTw4M
+Content-Type: application/json
+
+{
+  "list": "64b93218d85a42f7037e70cc"
+}
+
+
+### EDIT TODO STATUS
+PUT http://localhost:3000/todos/64b93afbc73c8b2aa44d3346
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOTMxYmRkODVhNDJmNzAzN2U3MGMwIn0sImlhdCI6MTY4OTg1ODUxMX0.L_0knm5jcfLE9Hz23kK7A89x24KK7aQdkWEP0UUTw4M
+
+
+### DELETE TODO
+DELETE http://localhost:3000/todos/64b93a789bba4d1c0803434c
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOTMxYmRkODVhNDJmNzAzN2U3MGMwIn0sImlhdCI6MTY4OTg1ODUxMX0.L_0knm5jcfLE9Hz23kK7A89x24KK7aQdkWEP0UUTw4M

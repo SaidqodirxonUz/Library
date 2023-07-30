@@ -1,0 +1,29 @@
+### POST LIST
+POST http://localhost:3000/lists
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOTMxOGVkODVhNDJmNzAzN2U3MGJkIn0sImlhdCI6MTY4OTg1ODQ2MX0.xShSRBOXPPH5POHl1xDJQ3f1ieHHQ8lSYM805Rpzal4
+Content-Type: application/json
+
+{
+    "name": "Sardorni beshinchi ro'yxati"
+}
+
+### GET LISTS
+GET http://localhost:3000/lists
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOTMxYmRkODVhNDJmNzAzN2U3MGMwIn0sImlhdCI6MTY4OTg1ODUxMX0.L_0knm5jcfLE9Hz23kK7A89x24KK7aQdkWEP0UUTw4M
+
+### GET LIST
+GET http://localhost:3000/lists/64b93205d85a42f7037e70c3
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOTMxYmRkODVhNDJmNzAzN2U3MGMwIn0sImlhdCI6MTY4OTg1ODUxMX0.L_0knm5jcfLE9Hz23kK7A89x24KK7aQdkWEP0UUTw4M
+
+### EDIT LIST
+PATCH http://localhost:3000/lists/64b8b76bde10440388854302
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOGI3MjFkZTEwNDQwMzg4ODU0MmZmIn0sImlhdCI6MTY4OTgyNzExMX0.BKDfiY7OWXgsff0RygR1QasKvhNV2QnqOB8DN4whvh4
+Content-Type: application/json
+
+{
+    "name": "LIST 1 (updated2)"
+}
+
+### DELETE LIST
+DELETE http://localhost:3000/lists/64b8b76bde10440388854302
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRiOGI3MjFkZTEwNDQwMzg4ODU0MmZmIn0sImlhdCI6MTY4OTgyNzExMX0.BKDfiY7OWXgsff0RygR1QasKvhNV2QnqOB8DN4whvh4
